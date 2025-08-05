@@ -111,7 +111,7 @@ const addToCart = (burger) => {
   overflow: hidden;
   height: 100%;
   width: 100%;
-  max-width: 240px; 
+  max-width: 290px; 
   margin: 0 auto;
 }
 

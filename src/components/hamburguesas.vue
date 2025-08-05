@@ -38,43 +38,43 @@ const cart = inject('cart');
 const burgers = ref([
   {
     id: 1,
-    name: 'Hamburguesa Clásica',
-    price: 12000,
+    name: 'Burguer Sen',
+    price: 20000,
     description: 'Carne 100% res, queso, lechuga, tomate y salsas',
     image: 'img/bebida1.png'
   },
   {
     id: 2,
-    name: 'Hamburguesa BBQ',
-    price: 15000,
+    name: 'Burguer Pepinillos ',
+    price: 22000,
     description: 'Carne, queso cheddar, cebolla crispy y salsa BBQ',
     image: 'img/bebida2.png'
   },
   {
     id: 3,
-    name: 'Hamburguesa Doble',
-    price: 18000,
+    name: 'Burguer Bacon',
+    price: 25000,
     description: 'Doble carne, doble queso, tocineta y vegetales',
     image: 'img/bebida3.png'
   },
   {
     id: 4,
-    name: 'Hamburguesa Pollo',
-    price: 13000,
+    name: 'Burguer Bacon-Cheese',
+    price: 28000,
     description: 'Pechuga de pollo empanizada, lechuga y salsa especial',
     image: 'img/bebida4.png'
   },
   {
     id: 5,
-    name: 'Hamburguesa Vegetariana',
-    price: 14000,
+    name: 'Burguer Doble',
+    price: 30000,
     description: 'Vegetales frescos, queso y hamburguesa de garbanzos',
     image: 'img/bebida5.png'
   },
   {
     id: 6,
-    name: 'Hamburguesa Especial',
-    price: 20000,
+    name: 'HBurguer Champiñon',
+    price: 26000,
     description: 'Carne angus, queso azul, hongos y salsa de la casa',
     image: 'img/bebida6.png'
   }
@@ -111,7 +111,7 @@ const addToCart = (burger) => {
   overflow: hidden;
   height: 100%;
   width: 100%;
-  max-width: 240px; 
+  max-width: 290px; 
   margin: 0 auto;
 }
 
