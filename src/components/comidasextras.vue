@@ -1,172 +1,139 @@
 <template>
-    <div class="q-pa-md full-width">
-        <div class="row no-wrap justify-center q-mb-md" style="width: fit-content; margin: 0 auto;">
-            <!-- Card 1 -->
-            <div class="col-auto q-mx-md">
-                <q-card flat bordered class="clean-card">
-                    <q-img src="img/hamburguesasen.png" style="height: 220px; width: 320px;" />
-                    <q-card-section class="q-pt-sm q-pb-xs">
-                        <div class="row no-wrap items-center">
-                            <div class="col text-h6 ellipsis">Café Basilico</div>
-                            <div class="col-auto">
-                                <q-rating v-model="rating1" :max="5" size="24px" />
-                            </div>
-                        </div>
-                    </q-card-section>
-                    <q-card-section class="q-pt-none q-pb-sm">
-                        <div class="text-subtitle2 text-weight-medium">$・Italian, Cafe</div>
-                        <div class="text-caption text-grey q-mt-xs">
-                            Small plates, salads & sandwiches in an intimate setting.
-                        </div>
-                    </q-card-section>
-                </q-card>
-            </div>
+  <div class="q-pa-md">
+    <h2 class="text-h4 text-weight-bold text-center q-mb-lg">NUESTRAS BEBIDAS</h2>
+    <q-separator color="primary" inset class="q-mx-auto q-mb-xl" style="width: 120px; height: 3px;" />
 
-            <!-- Card 2 -->
-            <div class="col-auto q-mx-md">
-                <q-card flat bordered class="clean-card">
-                    <q-img src="img/tu_imagen2.jpg" style="height: 220px; width: 320px;" />
-                    <q-card-section class="q-pt-sm q-pb-xs">
-                        <div class="row no-wrap items-center">
-                            <div class="col text-h6 ellipsis">Restaurante 2</div>
-                            <div class="col-auto">
-                                <q-rating v-model="rating2" :max="5" size="24px" />
-                            </div>
-                        </div>
-                    </q-card-section>
-                    <q-card-section class="q-pt-none q-pb-sm">
-                        <div class="text-subtitle2 text-weight-medium">$$・Mexican</div>
-                        <div class="text-caption text-grey q-mt-xs">
-                            Authentic Mexican cuisine with fresh ingredients.
-                        </div>
-                    </q-card-section>
-                </q-card>
-            </div>
+    <div class="row justify-center q-col-gutter-lg">
+      <div class="col-12 col-sm-6 col-md-4" v-for="(burger, index) in burgers" :key="index">
+        <q-card class="burger-card">
+          <q-img :src="burger.image" style="height: 220px;" />
+          
+          <q-card-section>
+            <div class="text-h6 text-weight-bold">{{ burger.name }}</div>
+            <div class="text-h6 text-primary q-mt-sm">${{ formatPrice(burger.price) }}</div>
+            <div class="text-caption text-grey q-mt-sm">{{ burger.description }}</div>
+          </q-card-section>
 
-            <div class="col-auto q-mx-md">
-                <q-card flat bordered class="clean-card">
-                    <q-img src="img/tu_imagen3.jpg" style="height: 220px; width: 320px;" />
-                    <q-card-section class="q-pt-sm q-pb-xs">
-                        <div class="row no-wrap items-center">
-                            <div class="col text-h6 ellipsis">Restaurante 3</div>
-                            <div class="col-auto">
-                                <q-rating v-model="rating3" :max="5" size="24px" />
-                            </div>
-                        </div>
-                    </q-card-section>
-                    <q-card-section class="q-pt-none q-pb-sm">
-                        <div class="text-subtitle2 text-weight-medium">$$$・Japanese</div>
-                        <div class="text-caption text-grey q-mt-xs">
-                            Traditional Japanese dishes prepared by master chefs.
-                        </div>
-                    </q-card-section>
-                </q-card>
-            </div>
-        </div>
-
-
-        <div class="row no-wrap justify-center" style="width: fit-content; margin: 0 auto;">
-
-            <div class="col-auto q-mx-md">
-                <q-card flat bordered class="clean-card">
-                    <q-img src="img/aguaMinerall.png" style="height: 220px; width: 320px;" />
-                    <q-card-section class="q-pt-sm q-pb-xs">
-                        <div class="row no-wrap items-center">
-                            <div class="col text-h6 ellipsis">Restaurante 4</div>
-                            <div class="col-auto">
-                                <q-rating v-model="rating4" :max="5" size="24px" />
-                            </div>
-                        </div>
-                    </q-card-section>
-                    <q-card-section class="q-pt-none q-pb-sm">
-                        <div class="text-subtitle2 text-weight-medium">$・Fast Food</div>
-                        <div class="text-caption text-grey q-mt-xs">
-                            Quick and delicious meals for busy people.
-                        </div>
-                    </q-card-section>
-                </q-card>
-            </div>
-
-
-            <div class="col-auto q-mx-md">
-                <q-card flat bordered class="clean-card">
-                    <q-img src="img/tu_imagen5.jpg" style="height: 220px; width: 320px;" />
-                    <q-card-section class="q-pt-sm q-pb-xs">
-                        <div class="row no-wrap items-center">
-                            <div class="col text-h6 ellipsis">Restaurante 5</div>
-                            <div class="col-auto">
-                                <q-rating v-model="rating5" :max="5" size="24px" />
-                            </div>
-                        </div>
-                    </q-card-section>
-                    <q-card-section class="q-pt-none q-pb-sm">
-                        <div class="text-subtitle2 text-weight-medium">$$・Vegetarian</div>
-                        <div class="text-caption text-grey q-mt-xs">
-                            Healthy and delicious plant-based meals.
-                        </div>
-                    </q-card-section>
-                </q-card>
-            </div>
-
-
-            <div class="col-auto q-mx-md">
-                <q-card flat bordered class="clean-card">
-                    <q-img src="img/tu_imagen6.jpg" style="height: 220px; width: 320px;" />
-                    <q-card-section class="q-pt-sm q-pb-xs">
-                        <div class="row no-wrap items-center">
-                            <div class="col text-h6 ellipsis">Restaurante 6</div>
-                            <div class="col-auto">
-                                <q-rating v-model="rating6" :max="5" size="24px" />
-                            </div>
-                        </div>
-                    </q-card-section>
-                    <q-card-section class="q-pt-none q-pb-sm">
-                        <div class="text-subtitle2 text-weight-medium">$$$・Seafood</div>
-                        <div class="text-caption text-grey q-mt-xs">
-                            Fresh seafood dishes from local fishermen.
-                        </div>
-                    </q-card-section>
-                </q-card>
-            </div>
-        </div>
+          <q-card-actions class="q-px-md q-pb-md">
+            <q-btn 
+              color="primary" 
+              label="Agregar al pedido" 
+              @click="addToCart(burger)"
+              class="full-width"
+            />
+          </q-card-actions>
+        </q-card>
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, inject } from 'vue';
+import { useQuasar } from 'quasar';
 
-const rating1 = ref(4)
-const rating2 = ref(4)
-const rating3 = ref(4)
-const rating4 = ref(4)
-const rating5 = ref(4)
-const rating6 = ref(4)
+const $q = useQuasar();
+const cart = inject('cart');
+
+const burgers = ref([
+  {
+    id: 1,
+    name: 'Hamburguesa Clásica',
+    price: 12000,
+    description: 'Carne 100% res, queso, lechuga, tomate y salsas',
+    image: 'img/bebida1.png'
+  },
+  {
+    id: 2,
+    name: 'Hamburguesa BBQ',
+    price: 15000,
+    description: 'Carne, queso cheddar, cebolla crispy y salsa BBQ',
+    image: 'img/bebida2.png'
+  },
+  {
+    id: 3,
+    name: 'Hamburguesa Doble',
+    price: 18000,
+    description: 'Doble carne, doble queso, tocineta y vegetales',
+    image: 'img/bebida3.png'
+  },
+  {
+    id: 4,
+    name: 'Hamburguesa Pollo',
+    price: 13000,
+    description: 'Pechuga de pollo empanizada, lechuga y salsa especial',
+    image: 'img/bebida4.png'
+  },
+  {
+    id: 5,
+    name: 'Hamburguesa Vegetariana',
+    price: 14000,
+    description: 'Vegetales frescos, queso y hamburguesa de garbanzos',
+    image: 'img/bebida5.png'
+  },
+  {
+    id: 6,
+    name: 'Hamburguesa Especial',
+    price: 20000,
+    description: 'Carne angus, queso azul, hongos y salsa de la casa',
+    image: 'img/bebida6.png'
+  }
+]);
+
+const formatPrice = (price) => {
+  return price.toLocaleString('es-CO');
+};
+
+const addToCart = (burger) => {
+  const existingItem = cart.value.find(item => item.id == burger.id);
+  
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    cart.value.push({
+      ...burger,
+      quantity: 1
+    });
+  }
+  
+  $q.notify({
+    message: `${burger.name} agregada al pedido`,
+    color: 'positive',
+    position: 'top'
+  });
+};
 </script>
 
 <style scoped>
-.clean-card {
-    width: 320px;
-    min-height: 0;
-    border-radius: 12px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.burger-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  max-width: 240px; 
+  margin: 0 auto;
 }
 
-.clean-card .q-img {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+.burger-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.text-subtitle2 {
-    font-size: 0.9rem;
+
+.q-card__section {
+  padding: 16px;
 }
 
-.full-width {
-    width: 100%;
-    overflow-x: hidden;
+
+.q-card__actions {
+  padding: 0 16px 16px;
 }
 
-.q-mb-md {
-    margin-bottom: 24px;
+
+@media (max-width: 600px) {
+  .burger-card {
+    max-width: 220px; 
+  }
 }
 </style>

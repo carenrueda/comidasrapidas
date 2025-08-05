@@ -1,12 +1,12 @@
 <template>
   <div class="q-pa-md">
-    <h2 class="text-h4 text-weight-bold text-center q-mb-lg">NUESTRAS HAMBURGUESAS</h2>
+    <h2 class="text-h4 text-weight-bold text-center q-mb-lg">NUESTRAS BEBIDAS</h2>
     <q-separator color="primary" inset class="q-mx-auto q-mb-xl" style="width: 120px; height: 3px;" />
 
     <div class="row justify-center q-col-gutter-lg">
       <div class="col-12 col-sm-6 col-md-4" v-for="(burger, index) in burgers" :key="index">
         <q-card class="burger-card">
-          <q-img :src="burger.image" style="height: 200px;" />
+          <q-img :src="burger.image" style="height: 220px;" />
           
           <q-card-section>
             <div class="text-h6 text-weight-bold">{{ burger.name }}</div>
@@ -41,42 +41,42 @@ const burgers = ref([
     name: 'Hamburguesa Clásica',
     price: 12000,
     description: 'Carne 100% res, queso, lechuga, tomate y salsas',
-    image: 'img/hamburguesas/clasica.jpg'
+    image: 'img/bebida1.png'
   },
   {
     id: 2,
     name: 'Hamburguesa BBQ',
     price: 15000,
     description: 'Carne, queso cheddar, cebolla crispy y salsa BBQ',
-    image: 'img/hamburguesas/bbq.jpg'
+    image: 'img/bebida2.png'
   },
   {
     id: 3,
     name: 'Hamburguesa Doble',
     price: 18000,
     description: 'Doble carne, doble queso, tocineta y vegetales',
-    image: 'img/hamburguesas/doble.jpg'
+    image: 'img/bebida3.png'
   },
   {
     id: 4,
     name: 'Hamburguesa Pollo',
     price: 13000,
     description: 'Pechuga de pollo empanizada, lechuga y salsa especial',
-    image: 'img/hamburguesas/pollo.jpg'
+    image: 'img/bebida4.png'
   },
   {
     id: 5,
     name: 'Hamburguesa Vegetariana',
     price: 14000,
     description: 'Vegetales frescos, queso y hamburguesa de garbanzos',
-    image: 'img/hamburguesas/vegetariana.jpg'
+    image: 'img/bebida5.png'
   },
   {
     id: 6,
     name: 'Hamburguesa Especial',
     price: 20000,
     description: 'Carne angus, queso azul, hongos y salsa de la casa',
-    image: 'img/hamburguesas/especial.jpg'
+    image: 'img/bebida6.png'
   }
 ]);
 
@@ -110,11 +110,31 @@ const addToCart = (burger) => {
   border-radius: 12px;
   overflow: hidden;
   height: 100%;
+  width: 100%;
+  max-width: 240px; 
+  margin: 0 auto;
 }
 
 .burger-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+.q-card__section {
+  padding: 16px;
+}
+
+
+.q-card__actions {
+  padding: 0 16px 16px;
+}
+
+
+@media (max-width: 600px) {
+  .burger-card {
+    max-width: 220px; 
+  }
 }
 </style>
 
