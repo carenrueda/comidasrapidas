@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <h2 class="text-h4 text-weight-bold text-center q-mb-lg">NUESTRAS BEBIDAS</h2>
+    <h2 class="text-h4 text-weight-bold text-center q-mb-lg">NUESTRAS HAMBURGUESAS</h2>
     <q-separator color="primary" inset class="q-mx-auto q-mb-xl" style="width: 120px; height: 3px;" />
 
     <div class="row justify-center q-col-gutter-lg">
