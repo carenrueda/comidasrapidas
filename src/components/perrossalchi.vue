@@ -41,42 +41,42 @@ const burgers = ref([
     name: 'Hamburguesa Clásica',
     price: 12000,
     description: 'Carne 100% res, queso, lechuga, tomate y salsas',
-    image: 'img/bebida1.png'
+    image: 'img/perro1.png'
   },
   {
     id: 2,
     name: 'Hamburguesa BBQ',
     price: 15000,
     description: 'Carne, queso cheddar, cebolla crispy y salsa BBQ',
-    image: 'img/bebida2.png'
+    image: 'img/perro2.png'
   },
   {
     id: 3,
     name: 'Hamburguesa Doble',
     price: 18000,
     description: 'Doble carne, doble queso, tocineta y vegetales',
-    image: 'img/bebida3.png'
+    image: 'img/perro3.png'
   },
   {
     id: 4,
     name: 'Hamburguesa Pollo',
     price: 13000,
     description: 'Pechuga de pollo empanizada, lechuga y salsa especial',
-    image: 'img/bebida4.png'
+    image: 'img/salchi1.png'
   },
   {
     id: 5,
     name: 'Hamburguesa Vegetariana',
     price: 14000,
     description: 'Vegetales frescos, queso y hamburguesa de garbanzos',
-    image: 'img/bebida5.png'
+    image: 'img/salchi2.png'
   },
   {
     id: 6,
     name: 'Hamburguesa Especial',
     price: 20000,
     description: 'Carne angus, queso azul, hongos y salsa de la casa',
-    image: 'img/bebida6.png'
+    image: 'img/salchi3.png'
   }
 ]);
 

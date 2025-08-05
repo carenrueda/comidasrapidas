@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <h2 class="text-h4 text-weight-bold text-center q-mb-lg">NUESTRAS BEBIDAS</h2>
+    <h2 class="text-h4 text-weight-bold text-center q-mb-lg">NUESTRAS HAMBURGUESAS</h2>
     <q-separator color="primary" inset class="q-mx-auto q-mb-xl" style="width: 120px; height: 3px;" />
 
     <div class="row justify-center q-col-gutter-lg">
@@ -40,43 +40,43 @@ const burgers = ref([
     id: 1,
     name: 'Burguer Sen',
     price: 20000,
-    description: 'Carne 100% res, queso, lechuga, tomate y salsas',
-    image: 'img/bebida1.png'
+    description: 'Carne 100% res, queso chedar, lechuga, tomate y salsa de la casa.',
+    image: 'img/hamburguesas1.png'
   },
   {
     id: 2,
     name: 'Burguer Pepinillos ',
     price: 22000,
-    description: 'Carne, queso cheddar, cebolla crispy y salsa BBQ',
-    image: 'img/bebida2.png'
+    description: 'Carne 100% res, queso, pepinillo, lechuga, tomate, salsas de la casa.',
+    image: 'img/hamburguesas2.png'
   },
   {
     id: 3,
     name: 'Burguer Bacon',
     price: 25000,
-    description: 'Doble carne, doble queso, tocineta y vegetales',
-    image: 'img/bebida3.png'
+    description: 'Carne 100% res,queso cheddar, tocineta y vegetales.',
+    image: 'img/hamburguesas3.png'
   },
   {
     id: 4,
     name: 'Burguer Bacon-Cheese',
     price: 28000,
-    description: 'Pechuga de pollo empanizada, lechuga y salsa especial',
-    image: 'img/bebida4.png'
+    description: 'Carne 100% res, tocineta, doble queso, queso cheddar, doble tocineta y vegetales frescos.',
+    image: 'img/hamburguesas4.png'
   },
   {
     id: 5,
     name: 'Burguer Doble',
     price: 30000,
-    description: 'Vegetales frescos, queso y hamburguesa de garbanzos',
-    image: 'img/bebida5.png'
+    description: 'Doble Carne 100% res, tocineta, queso cheddar,  vegetales frescos.',
+    image: 'img/hamburguesas5.png'
   },
   {
     id: 6,
     name: 'HBurguer Champiñon',
     price: 26000,
-    description: 'Carne angus, queso azul, hongos y salsa de la casa',
-    image: 'img/bebida6.png'
+    description: 'Carne 100% res, chapiñones salteados, queso dobe crema,  vegetales frescos.',
+    image: 'img/hamburguesas1.png'
   }
 ]);
 

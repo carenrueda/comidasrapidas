@@ -50,7 +50,7 @@ const burgers = ref([
         id: 3,
         name: 'Agua Mineral',
         price: 8000,
-        description: 'Referscante agua de los manantiales de las mas limpias montañas.',
+        description: 'Refrescante agua de los manantiales de las mas limpias montañas.',
         image: 'img/bebida3.png'
     },
     {
