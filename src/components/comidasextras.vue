@@ -38,23 +38,23 @@ const cart = inject('cart');
 const burgers = ref([
   {
     id: 1,
-    name: 'Hamburguesa Clásica',
-    price: 12000,
-    description: 'Carne 100% res, queso, lechuga, tomate y salsas',
+    name: 'Sanwich Azteca',
+    price: 18000,
+    description: 'Delicioso ppan brioche relleno de queso cheddar, tocineta, dip de aguacate y vegetales frescos; acompañado de chip de papa.',
     image: 'img/extra1.png'
   },
   {
     id: 2,
-    name: 'Hamburguesa BBQ',
+    name: 'Rollito Dulce',
     price: 15000,
-    description: 'Carne, queso cheddar, cebolla crispy y salsa BBQ',
+    description: 'Creps dulces relleno de nutella, banano y fresa, deliciosa explosion de sabores.',
     image: 'img/extra2.png'
   },
   {
     id: 3,
-    name: 'Hamburguesa Doble',
-    price: 18000,
-    description: 'Doble carne, doble queso, tocineta y vegetales',
+    name: 'Picada Mixta',
+    price: 40000,
+    description: 'Deliciosa mezcla de carne de res, chorizo, costillitas bbq acompañado de papas ala francesa y salsa de la casa.',
     image: 'img/extra3.png'
   },
   {
