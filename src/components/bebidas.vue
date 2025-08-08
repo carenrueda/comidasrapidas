@@ -37,7 +37,7 @@ const burgers = ref([
         name: 'Jugo Tropical',
         price: 12000,
         description: 'Seleccion de frutas frescas como: maracuya, fresa, mango y banana; una mezcla deliciosa.',
-        image: 'img/bebida1.png'
+        image: 'public/img/bebida1.png'
     },
     {
         id: 2,
