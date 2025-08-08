@@ -20,5 +20,5 @@ export default defineConfig({
       )
     })
   ],
-  base:"https://carenrueda.github.io/comidasrapidas/"
+  base:"/comidasrapidas/"
 })
