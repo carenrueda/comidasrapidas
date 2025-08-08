@@ -20,5 +20,5 @@ export default defineConfig({
       )
     })
   ],
-  base:"/comidasrapidas/"
+  base:"./"
 })
