@@ -58,21 +58,21 @@ const burgers = ref([
         name: 'Soda Frutos Rojos',
         price: 13000,
         description: 'Refrescante soda, acompañada de una increible mezcla de almibar de cereza, cereza, fresas y mora; una dulce experiencia.',
-        image: 'comidasrapidas/public/img/bebida4.png'
+        image: 'comidasrapidas/img/bebida4.png'
     },
     {
         id: 5,
         name: 'Limonada',
         price: 10000,
         description: 'Refrescante limonada',
-        image: '/comidasrapidas/public/img/bebida5.png'
+        image: '/comidasrapidas/img/bebida5.png'
     },
     {
         id: 6,
         name: 'Coca Cola',
         price: 8000,
         description: 'La inigualable gaseosa que nos aoompaña hace cien años',
-        image: './comidasrapidas/public/img/bebida6.png'
+        image: './comidasrapidas/img/bebida6.png'
     }
 ]);
 
