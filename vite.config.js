@@ -19,5 +19,8 @@ export default defineConfig({
         new URL('./src/quasar-variables.sass', import.meta.url)
       )
     })
-  ]
+  ],
+  base: process.env.NODE_ENV === 'production'
+  ? '/comidasrapidas/'
+  : '/'
 })
