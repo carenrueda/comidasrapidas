@@ -37,42 +37,42 @@ const burgers = ref([
         name: 'Jugo Tropical',
         price: 12000,
         description: 'Seleccion de frutas frescas como: maracuya, fresa, mango y banana; una mezcla deliciosa.',
-        image: 'public/img/bebida1.png'
+        image: '/public/img/bebida1.png'
     },
     {
         id: 2,
         name: 'Soda Frutos Amarillos',
         price: 13000,
         description: 'Refrescante soda, acompañada de una increible mezcla de almibar de durazno, maracuya y mango; una explosion de sabores.',
-        image: 'img/bebida2.png'
+        image: '/img/bebida2.png'
     },
     {
         id: 3,
         name: 'Agua Mineral',
         price: 8000,
         description: 'Refrescante agua de los manantiales de las mas limpias montañas.',
-        image: 'img/bebida3.png'
+        image: './img/bebida3.png'
     },
     {
         id: 4,
         name: 'Soda Frutos Rojos',
         price: 13000,
         description: 'Refrescante soda, acompañada de una increible mezcla de almibar de cereza, cereza, fresas y mora; una dulce experiencia.',
-        image: 'img/bebida4.png'
+        image: 'comidasrapidas/public/img/bebida4.png'
     },
     {
         id: 5,
         name: 'Limonada',
         price: 10000,
         description: 'Refrescante limonada',
-        image: 'img/bebida5.png'
+        image: '/comidasrapidas/public/img/bebida5.png'
     },
     {
         id: 6,
         name: 'Coca Cola',
         price: 8000,
         description: 'La inigualable gaseosa que nos aoompaña hace cien años',
-        image: 'img/bebida6.png'
+        image: './comidasrapidas/public/img/bebida6.png'
     }
 ]);
 
